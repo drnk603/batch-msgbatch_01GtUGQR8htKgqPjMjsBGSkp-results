@@ -33,9 +33,9 @@
   class ValidationManager {
     constructor() {
       this.patterns = {
-        email: /^[^s@]+@[^s@]+.[^s@]+$/,
-        name: /^[a-zA-ZÀ-ÿs-']{2,50}$/,
-        phone: /^[ds+-()]{10,20}$/,
+        email: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+        name: /^[a-zA-ZÀ-ÿ\s-']{2,50}$/,
+        phone: /^[\d\s+\-()]{10,20}$/,
         message: /^.{10,}$/
       };
     }
